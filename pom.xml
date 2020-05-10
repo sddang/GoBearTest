@@ -21,7 +21,7 @@
         <reportng.version>1.1.4</reportng.version>
         <guava.version>28.0-jre</guava.version>
         <velocity.version>1.4</velocity.version>
-        <jackson.version>2.4.4</jackson.version>
+        <jackson.version>2.11.0</jackson.version>
         <extentreport.version>2.41.2</extentreport.version>
         <google-inject.version>4.2.2</google-inject.version>
         <common-io.version>2.6</common-io.version>

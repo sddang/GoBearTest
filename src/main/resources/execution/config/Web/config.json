@@ -1,0 +1,16 @@
+{
+    "driverType":"webDriver",
+    "timeOut": 40,
+    "retryTestingCount":1,
+    "highlightActiveElement": false,
+    "localExecution": true,
+    "generateFunctionalDoc" : false,
+    "generateTechnicalDoc" : false,
+    "extentx" : false,
+    "verbose" : false,
+	"hubUrl":"http://localhost:4444/wd/hub",
+	
+    "browserName":"chrome",
+    "version":null,
+    "platform":"ANY"
+}

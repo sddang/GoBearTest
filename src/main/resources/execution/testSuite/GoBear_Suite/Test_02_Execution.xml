@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Web_Suite_02" parallel="none" thread-count="5">
+
+	<!--****************************************** Listeners ********************************* -->
+
+	<listeners>
+		<listener class-name="com.monkey.core.session.ExecutionManager" />
+		<listener class-name="com.monkey.core.session.TestManager" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	<!--****************************************** Parameters ********************************* -->
+
+	<parameter name="configfile" value="./execution/config/Web/config.json" />
+	<parameter name="protocol" value="selenium" />
+	<parameter name="browserMode" value="desktop" />
+	<parameter name="language" value="gb" />
+
+	<!--****************************************** Tests ************************************** -->
+	<test name="test">
+		<classes>
+			<class name="GoBear.TS_GoBear">
+				<methods>
+					<include name="TC_Test_02_Verify_ResultPage_LeftMenu_Functional"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
